@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="font/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css">
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jsatme.js"></script>
+	<title>Đăng Ký Thành Viên</title>
+
+</head>
+<body>
+	<div class="site container-fluid ">
+		<div class="top-panel_container row">
+			<div class="top-panel_left col-sm-8 offset-sm-1">
+				Tôi viết blog vì đam mê
+			</div>
+			<div class="top-panel_right col-sm-4">
+				
+			</div>
+		</div>
+		<!-- menu -->
+		<header class="container mt-3">
+			<nav class="navbar navbar-expand-lg navbar-light row">
+				<div class="container d-flex justify-content-between custom-header">	
+					<a class="navbar-brand col-sm-2" href="index.html">Blog Của Tui</a>
+					<ul class="nav navbar-nav col-sm-8 col-md-8">
+						<li class="nav-item">
+							<a class="nav-link" href="#">DU LỊCH</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">MÓN ĂN</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">LINH TINH</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="lienhevoitoi.html">LIÊN HỆ VỚI TÔI</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="dangkythanhvien.html">ĐĂNG KÝ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="dangnhap.html">ĐĂNG NHẬP</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="container mt-3">
+			<div class="row">
+				<div class="col-sm-8 main-content">
+					<aside class="dangkythanhvien mt-3">
+						<h3 class="dangkythanhvien_title text-center">
+							Đăng Nhập
+						</h3>
+						<form action="index.html" onsubmit="return validateLogin()" method="POST">
+							<div class="form-group">
+								<div class="row">
+									<label for="inputUser" class="col-sm-3 form-control-label">Tên đăng nhập</label>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" id="inputUser" required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 offset-sm-5 saiuser">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<label for="inputPass" class="col-sm-3 form-control-label">Mật khẩu</label>
+									<div class="col-sm-6">
+										<input type="password" class="form-control" id="inputPass" required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 offset-sm-5 saipass">
+									</div>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-offset-2 col-sm-10">
+									<button type="submit" class="btn btn-success">Đăng Nhập</button>
+								</div>
+							</div>
+						</form>
+					</aside>
+				</div>
+				<div class="col-sm-4 sidebar mt-3">
+					<aside class="widget-categorys mb-2">
+						<h3 class="widget-category-title">
+							Popular Categories
+						</h3>
+						<ul>
+							<li>
+								<a href="">
+									Airlines
+								</a>
+								<span class="widget_category_number-posts float-right">(12)</span>
+							</li>
+							<li>
+								<a href="">
+									Asia
+								</a>
+								<span class="widget_category_number-posts float-right">(20)</span>
+							</li>
+
+							<li>
+								<a href="">
+									Europe
+								</a>
+								<span class="widget_category_number-posts float-right">(15)</span>
+							</li>
+							<li>
+								<a href="">
+									Places
+								</a>
+								<span class="widget_category_number-posts float-right">(12)</span>
+							</li>
+						</ul>
+					</aside>
+					<aside class="widget-tags mb-2">
+						<h3 class="widget-tags__title">
+							Tags
+						</h3>
+						<div class="widget-tags__list">
+							<a class="widget_tags__link" href="">
+								Food
+							</a>
+							<a class="widget_tags__link" href="">
+								Travael
+							</a>
+							<a class="widget_tags__link" href="">
+								Technology
+							</a>
+							<a class="widget_tags__link" href="">
+								Plane
+							</a>
+							<a class="widget_tags__link" href="">
+								Friend
+							</a>
+							<a class="widget_tags__link" href="">
+								Trends
+							</a>
+							<a class="widget_tags__link" href="">
+								AI Machine
+							</a>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		<footer class="site-footer mt-3">
+			<div class="footer-area">
+				<div class="container">
+					<section class="row">
+						<aside class="col-xs-12 col-sm-6 col-md-3 widget-about">
+							<h4 class="widget-about__title">
+								Về tôi
+							</h4>
+							<div class="widget-about__content">
+								Cuộc sống quanh ta có lúc vui, lúc buồn, lúc thăng trầm nhưng hiện nay xã hội ngày càng văn minh, đất nước ngày càng phát triển. Để hòa cùng sự tiến triển đó, con người cũng cần khám phá những điều mới lạ. Blog là nơi tôi chia sẽ về những trải nghiệm của tôi.
+							</div>
+						</aside>
+						<aside class="col-xs-12 col-sm-6 col-md-3 widget-new-posts">
+							<h4 class="widget-new-posts__title">
+								Bài viết mới nhất
+							</h4>
+							<div class="widget-one-post">
+								<div class="widget-one-post_date">
+									March 9, 2018
+								</div>
+								<a href="" class="widget-one-post__title">Những tòa nhà "khác lạ" trên thế giới.</a>
+							</div>
+							<div class="widget-one-post">
+								<div class="widget-one-post_date">
+									March 9, 2018
+								</div>
+								<a href="" class="widget-one-post__title">Những tòa nhà "khác lạ" trên thế giới.</a>
+							</div>
+							<div class="widget-one-post">
+								<div class="widget-one-post_date">
+									March 9, 2018
+								</div>
+								<a href="" class="widget-one-post__title">Những tòa nhà "khác lạ" trên thế giới.</a>
+							</div>
+						</aside>
+						<aside class="col-xs-12 col-sm-6 col-md-3 widget-new-comments">
+							<h4 class="widget-new-comments__title">
+								Bình luận mới nhất
+							</h4>
+							<div class="widget-one-comment">
+								<span class="widget-one-comment__author">
+									admin
+								</span> on
+								<a class="widget-one-comment__postlink" href="">
+									Những tòa nhà "khác lạ" trên thế giới.
+								</a>
+							</div>
+							<div class="widget-one-comment">
+								<span class="widget-one-comment__author">
+									admin
+								</span> on
+								<a class="widget-one-comment__postlink" href="">
+									Những tòa nhà "khác lạ" trên thế giới.
+								</a>
+							</div>
+							<div class="widget-one-comment">
+								<span class="widget-one-comment__author">
+									admin
+								</span> on
+								<a class="widget-one-comment__postlink" href="">
+									Những tòa nhà "khác lạ" trên thế giới.
+								</a>
+							</div>
+							<div class="widget-one-comment">
+								<span class="widget-one-comment__author">
+									admin
+								</span> on
+								<a class="widget-one-comment__postlink" href="">
+									Những tòa nhà "khác lạ" trên thế giới.
+								</a>
+							</div>
+						</aside>
+						<aside class="col-xs-12 col-sm-6 col-md-3 widget-search">
+							<form>
+								<div class="form-group row">
+									<div class="col-sm-10 widget-search__input">
+										<i class="fas fa-search"></i><input type="text" class="form-control" id="inputEmail3" placeholder="Nhập từ khóa">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-offset-2 col-sm-10">
+										<button type="submit" class="btn btn-secondary widget-search__button">Tìm</button>
+									</div>
+								</div>
+							</form>
+						</aside>
+					</section>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>
